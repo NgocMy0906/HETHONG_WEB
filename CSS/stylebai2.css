@@ -1,0 +1,191 @@
+.khung {
+    width: 960px;
+    height: 660px;
+    border: 2px solid #294e79;
+}
+
+header {
+    height: 150px;
+    width: 960px;
+    background-color: #294e79;
+    position: relative;
+}
+
+header img {
+    height: 150px;
+    width: auto;
+    position: absolute;
+}
+
+header h2 {
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    color: #fff;
+    font-size: 50px;
+}
+
+header h4 {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    color: #fff;
+}
+
+header #frm {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+header #frm #txts {
+    border: 1px solid gray;
+    padding: 2px;
+}
+
+header #frm #bdns {
+    border: 1px solid gray;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: cadetblue;
+}
+
+nav {
+    position: absolute;
+    bottom: -3px;
+    right: 5px;
+}
+
+.menu li {
+    display: inline-table;
+    background-color: #576c85;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: -10px;
+    line-height: 50px;
+}
+
+.menu li:hover {
+    background-color: blue;
+}
+
+.menu li a {
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.menu li .sub-menu {
+    display: none;
+    background-color: #576c85;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+}
+
+.menu li:hover .sub-menu {
+    display: block;
+    left: 0px;
+    top: 51px;
+}
+
+.menu li:nth-child(4) {
+    position: relative;
+}
+
+.menu li .sub-menu li:nth-child(1) {
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    width: 115px;
+}
+
+.menu li .sub-menu li:nth-child(2) {
+    position: absolute;
+    top: 54px;
+    left: 0px;
+    width: 115px;
+}
+
+.menu li .sub-menu li:nth-child(3) {
+    position: absolute;
+    top: 106px;
+    left: 0px;
+    width: 115px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    /* Use full width of .khung */
+    height: auto;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+aside {
+    width: 340px;
+    height: 400px;
+    background-color: rgb(228, 225, 225);
+    right: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+article {
+    width: 580px;
+    height: auto;
+    display: block;
+    padding: 10px;
+}
+
+.container2 {
+    display: flex;
+}
+
+.section1 {
+    width: 320px;
+    background-color: #fff;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.section2 {
+    width: 260px;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Cho phép các phần tử linh hoạt nếu không đủ không gian */
+    justify-content: flex-start;
+}
+
+.form-subgroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+
+.form-subgroup input[type="text"] {
+    width: 80px;
+    height: 15px;
+    margin-bottom: 10px;
+}
+
+aside img {
+    width: 320px;
+    border: 5px solid gray;
+}
+
+footer {
+    margin-top: 10px;
+    height: 40px;
+    width: 950px;
+    background-color: #294e79;
+    line-height: 40px;
+    padding-left: 10px;
+}
