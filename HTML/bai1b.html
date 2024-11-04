@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1b</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+    <style>
+        .container {
+            width: calc(100% - 60px);
+            /* Đảm bảo khung ngoài có padding là 30px */
+            margin: auto;
+            padding: 30px;
+            border: 2px solid black;
+        }
+        
+        .img-custom {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background-color: #f8f9fa;
+        }
+        
+        .btn-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .btn {
+            border-radius: 12px;
+            padding: 10px 20px;
+        }
+        
+        .btn-blue {
+            background-color: rgb(0, 83, 200);
+            color: white;
+        }
+        
+        .col-custom {
+            width: calc(33.33% - 20px);
+            /* Đảm bảo khoảng cách giữa các khung là 20px */
+            padding: 20px;
+            border: 2px solid lightgray;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .row-custom {
+            display: flex;
+            gap: 20px;
+            /* Khoảng cách giữa các khung (padding giữa các cột) là 20px */
+        }
+        
+        h1 {
+            margin: 10px 0;
+        }
+        
+        .description {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container border">
+        <div class="row-custom">
+            <div class="col-custom">
+                <img class="img-fluid img-custom" src="../IMAGES/JK1.png" alt="Meat Image 1">
+                <div class="description">
+                    <h1>JungKook</h1>
+                    <p>Jeon Jung-kook sinh ngày 1 tháng 9 năm 1997 tại Busan, Hàn Quốc.</p>
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-blue">Eat now!</button>
+                        <button type="button" class="btn btn-secondary">Later...</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-custom">
+                <img class="img-fluid img-custom" src="../IMAGES/JK2.png" alt="Meat Image 2">
+                <div class="description">
+                    <h1>JungKook</h1>
+                    <p>Ngày 13 tháng 6 năm 2013, Jungkook ra mắt với tư cách là thành viên của BTS</p>
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-blue">Eat now!</button>
+                        <button type="button" class="btn btn-secondary">Later...</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-custom">
+                <img class="img-fluid img-custom" src="../IMAGES/JK3.png" alt="Meat Image 3">
+                <div class="description">
+                    <h1>JungKook</h1>
+                    <p>Ngày 5-5-2015, nhóm nhạc BTS giành chiếc cúp đầu tiên với tác phẩm "I Need U"</p>
+                    <div class="btn-container">
+                        <button type="button" class="btn btn-blue">Eat now!</button>
+                        <button type="button" class="btn btn-secondary">Later...</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

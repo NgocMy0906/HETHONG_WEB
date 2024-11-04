@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai1a</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <script src="../JS/jquery-3.7.1.min.js">
+    </script>
+    <script src="../JS/bootstrap.min.js">
+    </script>
+    <style>
+        .container {
+            max-width: 75%;
+            margin: auto;
+        }
+        
+        .img-custom {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .col-big {
+            height: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Cột lớn bên trái -->
+            <div class="col-md-6">
+                <img src="../IMAGES/ZOFGK.png" alt="Large Image" class="img-fluid img-custom col-big">
+            </div>
+
+            <!-- Cột bên phải với các ảnh nhỏ hơn -->
+            <div class="col-md-6">
+                <div class="row row-custom">
+                    <div class="col-6">
+                        <img src="../IMAGES/K.png" alt="Top Right Image" class="img-fluid img-custom">
+                    </div>
+                    <div class="col-6">
+                        <img src="../IMAGES/G.png" alt="Top Right Image" class="img-fluid img-custom">
+                    </div>
+                </div>
+                <div class="row row-custom">
+                    <div class="col-4">
+                        <img src="../IMAGES/F.png" alt="Bottom Left Image" class="img-fluid img-custom">
+                    </div>
+                    <div class="col-4">
+                        <img src="../IMAGES/O.png" alt="Bottom Center Image" class="img-fluid img-custom">
+                    </div>
+                    <div class="col-4">
+                        <img src="../IMAGES/Z.png" alt="Bottom Right Image" class="img-fluid img-custom">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

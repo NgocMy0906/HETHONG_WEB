@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Cinema</title>
+    <link rel="stylesheet" href="../CSS/bai3_b.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container bg-light">
+        <div id="header">
+            <nav class="navbar navbar-expand-lg navbar-light mt-2">
+                <div class="container">
+                    <div class="input-group w-50">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="../IMAGES/galaxyLogo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+
+                    <div class="input-group w-80">
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Mua Vé</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Phim</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Mai</a>
+                                        <a href="#" class="dropdown-item">Bà Thím Báo Thù</a>
+                                        <a href="#" class="dropdown-item">Tiếng Gầm Của Chiến Thắng - Demon Slayer</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Góc Điện Ảnh</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Thế Loại Phim</a>
+                                        <a href="#" class="dropdown-item">Đạo Diễn</a>
+                                        <a href="#" class="dropdown-item">Diễn Viên</a>
+                                        <a href="#" class="dropdown-item">Bình Luận Phim</a>
+                                        <a href="#" class="dropdown-item">Blog Điện Ảnh</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Sự Kiện</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Ưu Đãi</a>
+                                        <a href="#" class="dropdown-item">Phim Hay Tháng</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">Rạp/Giá Vé</a>
+                                    <div class="dropdown-menu">
+                                        <a href="#" class="dropdown-item">Galaxy Gala</a>
+                                        <a href="#" class="dropdown-item">Galaxy Nguyễn Du</a>
+                                        <a href="#" class="dropdown-item">Galaxy Bến Tre</a>
+                                        <a href="#" class="dropdown-item">Galaxy Quang Trung</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" data-toggle="modal" data-target="#myModalLogin">  Đăng Nhập   </a>
+                                    <div class="modal fade" id="myModalLogin">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <div class="row">
+                                                        <div class="col-11 text-center"><img id="imgdns" src="../IMAGES/dangnhap.svg" alt=""></div>
+                                                        <div class="col-1"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                                                        <div class="col-12 text-center">
+                                                            <h4 class="modal-title">Đăng Nhập Tài Khoản</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-12">Email</div>
+                                                            <div class="col-12">
+                                                                <input type="text" placeholder="Nhập Email" class="form-control">
+                                                            </div>
+                                                            <div class="col-12">Mật Khẩu</div>
+                                                            <div class="col-12">
+                                                                <input type="text" placeholder="Nhập Password" class="form-control">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <br>
+                                                                <button type="button" class="btn btn-warning btn-block">Đăng Nhập</button>
+                                                            </div>
+                                                            <div class="col-6"><a href="#">Quên mật khẩu?</a></div>
+                                                            <div class="col-6"></div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <p>Bạn chưa có tài khoản?</p>
+                                                    <button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#yourModal">Đăng Kí</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="#" data-toggle="modal" data-target="#myModalRegister">Đăng Ký </a>
+                                    <div class="modal fade" id="myModalRegister">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+
+                                                <div class="modal-header">
+                                                    <div class="row">
+                                                        <div class="col-11 text-center"><img id="imgdns" src="../IMAGES/dangnhap.svg" alt=""></div>
+                                                        <div class="col-1"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                                                        <div class="col-12 text-center">
+                                                            <h4 class="modal-title">Đăng Ký Tài Khoản</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-12">Họ và tên</div>
+                                                            <div class="col-12">
+                                                                <input type="text" placeholder="Nhập Họ và Tên" class="form-control">
+                                                            </div>
+                                                            <div class="col-12">Email</div>
+                                                            <div class="col-12">
+                                                                <input type="text" placeholder="Nhập Email" class="form-control">
+                                                            </div>
+                                                            <div class="col-12">Số điện thoại</div>
+                                                            <div class="col-12">
+                                                                <input type="text" placeholder="Nhập Số điện thoại" class="form-control">
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <input type="radio" class="form-check-input" name="gender" value="male" required>
+                                                                <label for="male" class="form-check-label">Male</label>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <input type="radio" class="form-check-input" value="female" required>
+                                                                <label for="female" class="form-check-label">Female</label>
+                                                            </div>
+                                                            <div class="col-12">Ngày Sinh</div>
+                                                            <div class="col-12">
+                                                                <input type="text" placeholder="Ngày/Tháng/Năm" class="form-control">
+                                                            </div>
+                                                            <div class="col-12">Mật Khẩu</div>
+                                                            <div class="col-12">
+                                                                <input type="text" placeholder="Nhập mật khẩu" class="form-control">
+                                                            </div>
+                                                            <div class="col-12">Nhập lại mật khẩu</div>
+                                                            <div class="col-12">
+                                                                <input type="text" placeholder="Nhập lại mật khẩu" class="form-control">
+                                                            </div>
+                                                            <div class="col-12">
+                                                                <br>
+                                                                <button type="button" class="btn btn-warning btn-block">Hoàn Thành</button>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <p>Bạn đã có tài khoản?</p>
+                                                    <button type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#yourModal">Đăng Nhập</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="body">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../IMAGES/happu.jpg" alt="Los Angeles">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../IMAGES/qc1.jpg" alt="Chicago">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../IMAGES/bee.jpg" alt="New York">
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card" style="width: 20rem; margin: 20px 0 24px 0;">
+                        <img class="card-img-top img-thumbnail" src="../IMAGES/dm2.jpg" alt="" style="width: 100%">
+                        <div class="card-body">
+                            <p class="card-text">Thanh Gươm Diệt Quỷ: Phép Màu Tình Thân, Cho Đến Chuyến Đặc Huấn Của Đại Trụ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 20rem; margin: 20px 0 24px 0;">
+                        <img class="card-img-top img-thumbnail" src="../IMAGES/katdt.png" alt="" style="width: 100%">
+                        <div class="card-body">
+                            <p class="card-text">Kỳ Án Trên Đồi Tuyết</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card" style="width: 20rem; margin: 20px 0 24px 0;">
+                        <img class="card-img-top img-thumbnail" src="../IMAGES/hcttx.jpg" alt="" style="width: 100%">
+                        <div class="card-body">
+                            <p class="card-text">Hội Chứng Tuổi Thanh Xuân: Cô Bé Đeo Cặp Sách</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <hr>
+            <div class="row">
+                <div class="col-2"> <img src="../IMAGES/iconfoooter.svg" alt=""></div>
+                <div class="col-10" style="color: white;">CÔNG TY CỔ PHẦN PHIM THIÊN NGÂN <br> Toà nhà Bitexco Nam Long, 63A Võ Văn Tần, Phường 6, Quận 3, Tp. Hồ Chí Minh, Việt Nam <br> &#128241;: 028.39.333.303 - &#128222;: 19002224 (9:00 - 22:00)
+                    <br> Xem thêm tại: https://www.galaxycine.vn/</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
